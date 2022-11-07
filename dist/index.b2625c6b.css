@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #333;
+  cursor: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+}
+
+.blog {
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #5f9ea0;
+  margin-bottom: 2rem;
+}
+
+p {
+  text-align: justify;
+  margin-bottom: 2rem;
+}
+
+.intro {
+  z-index: 1000;
+  width: 100%;
+  height: 100vh;
+  background-color: tomato;
+  transition: all .5s ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.logo-header {
+  color: #f0f8ff;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.intro-logo {
+  opacity: 0;
+  display: inline-block;
+  position: relative;
+  bottom: -25px;
+}
+
+.intro-logo.active {
+  opacity: 1;
+  transition: all .5s ease-in-out;
+  bottom: 0;
+}
+
+.intro-logo.fade {
+  opacity: 0;
+  transition: all .5s ease-in-out;
+  bottom: 150px;
+}
+
+.inner-cursor {
+  z-index: 999;
+  width: 10px;
+  height: 10px;
+  mix-blend-mode: difference;
+  pointer-events: none;
+  transition: width .5s height .5s;
+  background-color: #060505;
+  border-radius: 50%;
+  position: fixed;
+  left: 10px;
+  transform: translate(-50%, -50%);
+}
+
+.inner-cursor.grow {
+  width: 25px;
+  height: 25px;
+  transition: width .5s height .5s;
+}
+
+.outer-cursor {
+  width: 25px;
+  height: 25px;
+  z-index: 999;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  border: 1px solid #060505;
+  border-radius: 50%;
+  transition: all .1s;
+  position: fixed;
+  left: 10px;
+  transform: translate(-50%, -50%);
+}
+
+a {
+  color: inherit;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 100px;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover {
+  color: #a79696;
+  transition: all .5s;
+}
+
+/*# sourceMappingURL=index.b2625c6b.css.map */
